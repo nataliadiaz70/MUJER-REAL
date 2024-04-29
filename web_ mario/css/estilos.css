@@ -12,18 +12,19 @@ body {
     font-family: Arial, sans-serif !important;
     margin:0;
     padding:0;
+    background-color: #090909;
 }
 
 /* Header/logo Title */
 .header img {
-    padding: 10px;
+    padding: 0px;
     text-align: center;
     color: rgb(9, 8, 8);
     max-width: auto;
     position: relative;
 
-}*
-h2{
+}
+ h2{
     color: orange;
 }
 
@@ -35,7 +36,7 @@ background: image 100%; ;
 }
 .navbar {
     display: flex;
-    background-color:rgba(12, 12, 11, 0.898);
+    background-color:rgba(7, 7, 7, 0.938);
 }
 
 /* Style the navigation bar links */
@@ -80,17 +81,17 @@ img {
 }
 .slider {
     position: relative;
-    width: 100%;
+    width: 80%;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 40px;
     overflow: hidden;
-    padding-left:20px;
+    padding-left:30px;
     padding-right: 20px;
 }
 
 .slider ul {
     display: flex;
-    padding: 0;
+    padding: 20px;
     width: 400%;
 
     animation: cambio 20s infinite alternate linear;
@@ -99,11 +100,14 @@ img {
 .slider li {
     width: 100%;
     list-style: none;
+    
 }
 
 .slider img {
     width: 100%;
+
 }
+
 
 @keyframes cambio {
     0% {
@@ -145,6 +149,35 @@ img {
     background:black;
     color:#efa938 ;
 }
+.red-social{
+color: #f5f1f1;
+background-color:rgb(10, 10, 10) ;
+position: relative;
+text-align: center;
+padding-bottom: 50px;
+}
+
+.red-social a:hover {
+    color: rgb(235, 93, 93);
+}
+
+
+
+.red-social a {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: rgb(9, 9, 9);
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+
+
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 @media (max-width: 700px) {
