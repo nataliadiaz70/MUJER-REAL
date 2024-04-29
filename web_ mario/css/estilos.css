@@ -1,4 +1,7 @@
-* {
+@import url('https://fonts.googleapis.com/css?family=Proxima+Nova|Open+Sans|Roboto');
+
+
+*{
     /* La propiedad border-box recalcula el ancho de una caja para que el width sea la estrictamente la suma de border + padding + ancho o altura que sea necesario para que se cumpla. 
     BORDER-BOX NO INCLUYE LOS MÁRGENES! */
     box-sizing: border-box;
@@ -6,38 +9,46 @@
 
 /* Style the body */
 body {
-    font-family: Arial;
-    margin:20px;
+    font-family: Arial, sans-serif !important;
+    margin:0;
+    padding:0;
 }
 
 /* Header/logo Title */
-.header {
-    padding: 60px;
+.header img {
+    padding: 10px;
     text-align: center;
-    background:rgba(218, 145, 10, 0.655);
-    color: white;
-}
+    color: rgb(9, 8, 8);
+    max-width: auto;
+    position: relative;
+
+}*
 h2{
     color: orange;
 }
 
 /* Style the top navigation bar */
+.header{
+background: image 100%; ;
+
+
+}
 .navbar {
     display: flex;
-    background-color:rgba(168, 243, 168, 0.898);
+    background-color:rgba(12, 12, 11, 0.898);
 }
 
 /* Style the navigation bar links */
 .navbar a {
     color: white;
-    padding: 14px 20px;
+    padding: 50px 20px 50px 20px;
     text-decoration: none;
-    text-align: center;
+    text-align-last: 20px;
 }
 
 /* Change color on hover */
 .navbar a:hover {
-    background-color: #ed8484;
+    background-color: #efdbdb;
     color: black;
 }
 
@@ -45,18 +56,20 @@ h2{
 .row {
     display: flex;
     flex-wrap: wrap;
+    background-color: #1b2da0; 
+    margin: 10px;
 }
 img {
     max-width: 100%; /* La imagen no excederá el ancho del contenedor */
     height: auto; /* Altura ajustada automáticamente */
-    border: 1px solid #ccc; /* Borde de la imagen (opcional) */
+    border: 1px solid #090909; /* Borde de la imagen (opcional) */
 }
 /* Create two unequal columns that sits next to each other */
 /* Sidebar/left column */
 .side {
     flex: 30%;
-    background-color: #f1f1f1;
-    padding: 20px;
+    background-color: #e9e1e1;
+    padding: 10px;
 }
 
 /* Main column */
@@ -65,8 +78,60 @@ img {
     background-color: white;
     padding: 20px;
 }
+.slider {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    margin-top: 20px;
+    overflow: hidden;
+    padding-left:20px;
+    padding-right: 20px;
+}
 
-/* Fake image, just for this example */
+.slider ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+
+    animation: cambio 20s infinite alternate linear;
+}
+
+.slider li {
+    width: 100%;
+    list-style: none;
+}
+
+.slider img {
+    width: 100%;
+}
+
+@keyframes cambio {
+    0% {
+        margin-left: 0;
+    }
+
+
+    22% {
+        margin-left: -100%;
+    }
+
+
+
+    44% {
+        margin-left: -200%;
+    }
+    
+
+    66% {
+        margin-left: -300%;
+    }
+
+}
+
+    
+
+
+
 .fakeimg {
     background-color: #e5e2e2;
     width: 100%;
@@ -75,9 +140,10 @@ img {
 
 /* Footer */
 .footer {
-    padding: 20px;
+    padding: 80px 20px 10px ;
     text-align: center;
-    background:rgba(239, 176, 60, 0.752);
+    background:black;
+    color:#efa938 ;
 }
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
