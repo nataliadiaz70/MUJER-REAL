@@ -24,10 +24,17 @@ body {
     position: relative;
 
 }
- h2{
+
+h2{
     color: orange;
+    text-align: center;
 }
 
+
+
+.form{
+    background-color: white;
+}
 /* Style the top navigation bar */
 .header{
 background: image 100%; ;
@@ -49,7 +56,7 @@ background: image 100%; ;
 
 /* Change color on hover */
 .navbar a:hover {
-    background-color: #efdbdb;
+    background-color: #e8b684;
     color: black;
 }
 
@@ -63,7 +70,22 @@ background: image 100%; ;
 img {
     max-width: 100%; /* La imagen no excederá el ancho del contenedor */
     height: auto; /* Altura ajustada automáticamente */
-    border: 1px solid #090909; /* Borde de la imagen (opcional) */
+    border: 1px solid white; /* Borde de la imagen (opcional) */
+}
+.mapa{
+    background-position: center;
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-family: "Adamina", Sans-serif;
+    font-size: 28px;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 50px;
+    letter-spacing: 3.1px;
+    word-spacing: 0px;
+    stroke: #000;
+    
 }
 /* Create two unequal columns that sits next to each other */
 /* Sidebar/left column */
@@ -134,8 +156,6 @@ img {
 
     
 
-
-
 .fakeimg {
     background-color: #e5e2e2;
     width: 100%;
@@ -147,7 +167,7 @@ img {
     padding: 80px 20px 10px ;
     text-align: center;
     background:black;
-    color:#efa938 ;
+    color:white ;
 }
 .red-social{
 color: #f5f1f1;
@@ -158,7 +178,7 @@ padding-bottom: 50px;
 }
 
 .red-social a:hover {
-    color: rgb(235, 93, 93);
+    color: orange;
 }
 
 
@@ -171,7 +191,7 @@ padding-bottom: 50px;
     line-height: 45px;
     color: #fff;
     margin-right: 10px;
-    background-color: rgb(9, 9, 9);
+    background-color: rgb(114, 114, 114);
     text-align: center;
     transition: all 300ms ease;
 }
