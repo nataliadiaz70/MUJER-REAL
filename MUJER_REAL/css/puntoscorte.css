@@ -1,0 +1,74 @@
+/* Estilos para móviles */
+.hero-image {
+    background-image: url(""); /* Cambia 'ruta_de_tu_imagen.jpg' por la ruta de tu imagen */
+    
+    height: auto;
+    width: 100%; /* Ajusta la altura de la imagen según tu necesidad */
+    margin: 20px ; 
+}
+/* Estilos para las imágenes */
+
+
+
+/* Estilos para las imágenes */
+.img-movil, .img-grande {
+    display: none; /* Ocultar por defecto */
+}
+
+
+
+
+@media (max-width: 767px) {
+    /* Tus estilos para móviles aquí */
+    .row,
+    nav ul li{
+        display: block;; /*Cambio de horizontal a vertical en ambas clases*/
+    }
+
+    .img-movil {
+         
+        display: block !important;
+        width: 100%;
+        height: auto;
+        
+        /* Mostrar imagen para móviles */
+    }
+   .img-grande{
+
+    display: none !important;
+   }
+
+
+   }
+    
+
+
+
+
+
+
+/* Estilos para tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+    nav ul li {
+        display: inline-block;  /* Tus estilos para tablets aquí */
+}
+
+.img-grande {
+    display: block; /* Mostrar imagen para pantallas más grandes */
+}
+}
+
+
+
+
+
+
+/* Estilos para PCs (escritorio) */
+@media (min-width: 1025px) {
+    nav ul li {
+    display: inline;  /* Tus estilos para PC aquí */
+}
+.img-grande {
+    display: block; /* Mostrar imagen para pantallas más grandes */
+}
+}

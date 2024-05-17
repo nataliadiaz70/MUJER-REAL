@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css/estilos.css');
+
+*{
+    /* La propiedad border-box recalcula el ancho de una caja para que el width sea la estrictamente la suma de border + padding + ancho o altura que sea necesario para que se cumpla. 
+    BORDER-BOX NO INCLUYE LOS MÁRGENES! */
+    box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+    font-family: 'lato';
+    margin:0;
+    padding:0;
+    background-color: #090909;
+}
+
+
+
+
+.descripcion{
+border-radius: 5px;
+color: #000;
+padding: 10px;
+position: relative;
+}
+
+
+
+

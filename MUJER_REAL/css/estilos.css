@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css?family=font_lato');
+
+
+*{
+    /* La propiedad border-box recalcula el ancho de una caja para que el width sea la estrictamente la suma de border + padding + ancho o altura que sea necesario para que se cumpla. 
+    BORDER-BOX NO INCLUYE LOS MÁRGENES! */
+    box-sizing: border-box;
+
+}
+@font-face {
+    font-family: 'lato_light';
+    src: url('https://fonts.googleapis.com/css/estilos.css/font_lato.ttf') format('truetype'); /* Ruta a tu archivo de fuente */
+}
+/* Style the body */
+
+
+
+body {
+    font-family: 'lato';
+    margin:10px;
+    padding:40px;
+    background-color: #ece7e7;
+    max-width: 1400px;
+}
+
+/* Header/logo Title */
+
+ h2{
+    color:#AB793E;
+}
+#AB793E
+#161917
+#E1E3DB
+/* Style the top navigation bar */
+
+
+
+
+body {
+    margin: 0;
+    font-family: 'lato';
+}
+.hero-image {
+        background-image: url(""); /* Cambia 'ruta_de_tu_imagen.jpg' por la ruta de tu imagen */
+        
+        height: auto;
+        width: 100%; /* Ajusta la altura de la imagen según tu necesidad */
+        margin: 20px ; 
+    }
+    /* Estilos para las imágenes */
+    .img-movil {
+        display: none; /* Ocultar por defecto */
+    }
+    
+    .img-grande {
+        display: none; /* Ocultar por defecto */
+    }
+    
+
+
+
+
+    
+
+
+header {
+    position:absolute;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    max-width: 1400px; /* Asegúrate de que el menú esté por encima de la imagen */
+}
+
+nav {
+     /* Fondo semitransparente para el menú */
+    padding: 10px;
+    
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding-top: 30%;
+}
+
+nav ul li {
+    display: flex;
+    display:inline-block;
+    font-family:'lato';
+    font-size: 30px;
+    margin-right: 40px;
+}
+
+nav ul li a {
+    color: rgb(176, 63, 22);
+    text-decoration: none;
+    
+}
+a:hover {
+    
+    color: rgb(11, 11, 11);
+}
+
+
+
+
+/* Change color on hover */
+
+
+/* Column container */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #e8e9f0; 
+    margin: 0px;
+    padding-right:  40px;
+}
+img {
+    max-width: 90%; /* La imagen no excederá el ancho del contenedor */
+    height: auto; /* Altura ajustada automáticamente */
+    border: 1px solid #edecec; /* Borde de la imagen (opcional) */
+}
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+    flex: 10%;
+    background-color: #f4f1f1;
+    padding: 10px;
+}
+.mapa{
+    padding: 70px;
+    
+}
+/* Main column */
+.main {
+    
+    display: flex 70%;
+    background-color: rgba(248, 240, 224, 0.839);
+    padding: 50px;
+    font-family:'lato';
+    font-size: 20px;
+}
+.slider {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+    overflow: hidden;
+    padding-left:30px;
+    padding-right: 20px;
+}
+
+.slider ul {
+    display: flex;
+    padding: 20px;
+    width: 400%;
+
+    animation: cambio 20s infinite alternate linear;
+}
+
+.slider li {
+    width: 100%;
+    list-style: none;
+    
+}
+
+.slider img {
+    width: 100%;
+
+}
+.container{
+    font-family: 'font_lato';
+    border: 1px solid #090909;
+    border-radius: 14px;
+    color: #000;
+    padding: 50px;
+
+
+
+}
+
+@keyframes cambio {
+    0% {
+        margin-left: 0;
+    }
+
+
+    22% {
+        margin-left: -100%;
+    }
+
+
+
+    44% {
+        margin-left: -200%;
+    }
+    
+
+    66% {
+        margin-left: -300%;
+    }
+
+}
+
+    
+
+
+
+.fakeimg {
+    background-color: #e5e2be90;
+    width: 30%;
+    padding: 2%;
+    
+}
+
+/* Footer */
+.footer {
+    padding: 80px 20px 10px ;
+    text-align: center;
+    background:black;
+    color:#efa938 ;
+}
+.red-social{
+color: #f5f1f1;
+background-color:rgb(10, 10, 10) ;
+position: relative;
+text-align: center;
+padding-bottom: 50px;
+}
+
+.red-social a:hover {
+    color: rgb(235, 114, 114);
+}
+
+
+
+.red-social a {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: rgb(9, 9, 9);
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+.small{
+position: relative;
+
+
+}
+
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media (max-width: 700px) {
+    .row,
+    .nav{
+        flex-direction: column; /*Cambio de horizontal a vertical en ambas clases*/
+    }
+}
