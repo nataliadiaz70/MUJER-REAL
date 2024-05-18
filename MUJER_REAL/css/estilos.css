@@ -5,7 +5,8 @@
     /* La propiedad border-box recalcula el ancho de una caja para que el width sea la estrictamente la suma de border + padding + ancho o altura que sea necesario para que se cumpla. 
     BORDER-BOX NO INCLUYE LOS MÁRGENES! */
     box-sizing: border-box;
-
+    margin: 0px;
+    padding: 0px;
 }
 @font-face {
     font-family: 'lato_light';
@@ -15,13 +16,36 @@
 
 
 
-body {
+/*body {
     font-family: 'lato';
-    margin:10px;
-    padding:40px;
-    background-color: #ece7e7;
+    margin:0px;
+    padding:0px;
+    background-color: #f0c4c4;
     max-width: 1400px;
+    display: flex;
+    color:#AB793E ;
+    text-align: center;
+}*/
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #faf4f4;
+    display: flex;
+    justify-content: center; /* Centrado horizontal */
+    align-items: center;     /* Centrado vertical */
+    min-height: 100vh;       /* Asegura que el body ocupe al menos el 100% de la altura de la ventana */
+    text-align: center;
+    color: #f1ede8;
 }
+
+/* Contenedor principal */
+.main-container {
+    max-width: 1400px;
+    width: 100%;
+    padding: 0px;
+}
+
 
 /* Header/logo Title */
 
@@ -34,33 +58,26 @@ body {
 #E1E3DB
 
 
-h2{
-    color: orange;
-    text-align: center;
-}
-
-
-
-.form{
-    background-color: white;
-}
-
 /* Style the top navigation bar */
 
 
-
-
-body {
-    margin: 0;
-    font-family: 'lato';
-}
 .hero-image {
         background-image: url(""); /* Cambia 'ruta_de_tu_imagen.jpg' por la ruta de tu imagen */
         
-        height: auto;
-        width: 100%; /* Ajusta la altura de la imagen según tu necesidad */
-        margin: 20px ; 
-    }
+        
+            position: relative;
+            width: 100%;
+            height: 100vh; /* 100% de la altura de la ventana */
+            overflow: hidden;
+            
+        } 
+        /* Ajusta la imagen para cubrir el contenedor */
+        
+    
+            
+             /* Ajusta la imagen para cubrir el contenedor */
+           
+    
     /* Estilos para las imágenes */
     .img-movil {
         display: none; /* Ocultar por defecto */
@@ -73,28 +90,39 @@ body {
 
 
 
-
-    
-
-
 header {
-    position:absolute;
+    position:relative;
     width: 100%;
-    z-index: 1000;
+    
     display: flex;
-    max-width: 1400px; /* Asegúrate de que el menú esté por encima de la imagen */
+    max-width: 1400px;
+    background-color:transparent;
+    
+     /* Asegúrate de que el menú esté por encima de la imagen */
 }
 
-nav {
+nav  {
+    position: absolute; /* Posición absoluta para superponer el nav */
+    top: 0;
+    left: 0;
+    width: 100%;; /* Fondo semi-transparente */
+    
+    padding: 10px 0;
+    z-index: 10; /* Asegura que el nav esté por encima de la imagen */
+    
+    
+
      /* Fondo semitransparente para el menú */
-    padding: 10px;
+    
     
 }
 
 nav ul {
     list-style-type: none;
     margin: 0;
-    padding-top: 30%;
+    padding: 50px;
+    display: flex;
+    
 }
 
 nav ul li {
@@ -102,12 +130,17 @@ nav ul li {
     display:inline-block;
     font-family:'lato';
     font-size: 30px;
-    margin-right: 40px;
+    margin:10px;
+    padding-top: 20px;
+    
+    
+    
 }
 
 nav ul li a {
-    color: rgb(176, 63, 22);
+    color:#ede3d6;
     text-decoration: none;
+    
     
 }
 a:hover {
@@ -120,7 +153,7 @@ a:hover {
 
 /* Change color on hover */
 .navbar a:hover {
-    background-color: #e8b684;
+    background-color: #e28f3c;
     color: black;
 }
  
@@ -134,24 +167,18 @@ a:hover {
     padding-right:  40px;
 }
 img {
-    max-width: 90%; /* La imagen no excederá el ancho del contenedor */
+    max-width: 100%; /* La imagen no excederá el ancho del contenedor */
     height: auto; /* Altura ajustada automáticamente */
-
-    border: 1px solid #edecec; /* Borde de la imagen (opcional) */
-    border: 1px solid white; /* Borde de la imagen (opcional) */
+    object-fit: cover;
+    border: transparent; /* Borde de la imagen (opcional) */
+    /* Borde de la imagen (opcional) */
 }
 .mapa{
     background-position: center;
     text-align: center;
     background-color: black;
     color: white;
-    font-family: "Adamina", Sans-serif;
-    font-size: 28px;
-    font-weight: 900;
-    font-style: italic;
-    line-height: 50px;
-    letter-spacing: 3.1px;
-    word-spacing: 0px;
+    font-size: 20px;
     stroke: #000;
     
  
@@ -160,25 +187,26 @@ img {
 /* Sidebar/left column */
 .side {
     flex: 10%;
-    background-color: #f4f1f1;
+    background-color: #f6f1f1;
     padding: 10px;
 }
 .mapa{
-    padding: 70px;
+    padding: 50px;
     
 }
 /* Main column */
 .main {
     
     display: flex 70%;
-    background-color: rgba(248, 240, 224, 0.839);
-    padding: 50px;
+    background-color: rgba(242, 237, 231, 0.839);
+    padding: 20px;
     font-family:'lato';
     font-size: 20px;
+    color: rgba(13, 13, 12, 0.635);
 }
 .slider {
-    position: relative;
-    width: 80%;
+    position:relative;
+    width: 90%;
     margin: auto;
     margin-top: 40px;
     overflow: hidden;
@@ -201,7 +229,7 @@ img {
 }
 
 .slider img {
-    width: 100%;
+    width: 90%;
 
 }
 .container{
@@ -237,11 +265,30 @@ img {
     }
 
 }
+@keyframes show{
+    from{
+    opacity: 0;
+    scale:25%;
+}
+to{
+opacity: 1;
+scale: 100%;
+}
+img{
+view-timeline-name: --image;
+view-timeline-axis: block;
+animation-timeline: --image;
+animation-name: show;
 
+animation-range: entry 25% cover 50%;
+animation-fill-mode: both;
+
+}
+}
     
 
 .fakeimg {
-    background-color: #e5e2be90;
+    background-color: #ededec90;
     width: 30%;
     padding: 2%;
     
@@ -252,11 +299,11 @@ img {
     padding: 80px 20px 10px ;
     text-align: center;
     background:black;
-    color:white ;
+    color:#AB793E;
 }
 .red-social{
 color: #f5f1f1;
-background-color:rgb(10, 10, 10) ;
+background-color:rgb(13, 12, 12) ;
 position: relative;
 text-align: center;
 padding-bottom: 50px;
@@ -264,7 +311,7 @@ padding-bottom: 50px;
 
 .red-social a:hover {
 
-    color: rgb(235, 114, 114);
+    color: #AB793E;
 
     
 
@@ -280,14 +327,14 @@ padding-bottom: 50px;
     line-height: 45px;
     color: #fff;
     margin-right: 10px;
-    background-color: rgb(114, 114, 114);
+    background-color: rgb(15, 14, 14);
     text-align: center;
     transition: all 300ms ease;
 }
 
-.small{
-position: relative;
-
+.grupo2 small{
+    position: relative;
+    color:#AB793E;
 
 }
 

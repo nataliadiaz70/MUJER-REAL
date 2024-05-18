@@ -21,15 +21,21 @@
 @media (max-width: 767px) {
     /* Tus estilos para móviles aquí */
     .row,
-    nav ul li{
-        display: block;; /*Cambio de horizontal a vertical en ambas clases*/
+    nav ul {
+        
+        flex-direction:column;
+        text-align: left;
+        color: beige;
+        
+        /*Cambio de horizontal a vertical en ambas clases*/
     }
 
     .img-movil {
          
-        display: block !important;
+        display:block !important;
         width: 100%;
         height: auto;
+    
         
         /* Mostrar imagen para móviles */
     }
@@ -40,13 +46,6 @@
 
 
    }
-    
-
-
-
-
-
-
 /* Estilos para tablets */
 @media (min-width: 768px) and (max-width: 1024px) {
     nav ul li {
