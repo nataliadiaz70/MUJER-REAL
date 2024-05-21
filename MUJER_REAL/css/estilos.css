@@ -16,27 +16,18 @@
 
 
 
-/*body {
-    font-family: 'lato';
-    margin:0px;
-    padding:0px;
-    background-color: #f0c4c4;
-    max-width: 1400px;
-    display: flex;
-    color:#AB793E ;
-    text-align: center;
-}*/
+
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lato';
     margin: 0;
     padding: 0;
-    background-color: #faf4f4;
+    background-color:#E1E3DB;
     display: flex;
     justify-content: center; /* Centrado horizontal */
     align-items: center;     /* Centrado vertical */
     min-height: 100vh;       /* Asegura que el body ocupe al menos el 100% de la altura de la ventana */
     text-align: center;
-    color: #f1ede8;
+    color: #f1e5d7;
 }
 
 /* Contenedor principal */
@@ -45,10 +36,21 @@ body {
     width: 100%;
     padding: 0px;
 }
-
+.main {
+    
+    display: flex 70%;
+    background-color: rgba(249, 247, 245, 0.839);
+    padding: 20px;
+    font-family:'lato';
+    font-size: 20px;
+    color: rgba(13, 13, 12, 0.635);
+}
 
 /* Header/logo Title */
+h1{
 
+    color:#70160E;
+}
 
  h2{
     color:#AB793E;
@@ -56,7 +58,7 @@ body {
 #AB793E
 #161917
 #E1E3DB
-
+#70160E
 
 /* Style the top navigation bar */
 
@@ -70,32 +72,13 @@ body {
             height: 100vh; /* 100% de la altura de la ventana */
             overflow: hidden;
             
-        } 
-        /* Ajusta la imagen para cubrir el contenedor */
-        
+        }
     
-            
-             /* Ajusta la imagen para cubrir el contenedor */
-           
-    
-    /* Estilos para las imágenes */
-    .img-movil {
-        display: none; /* Ocultar por defecto */
-    }
-    
-    .img-grande {
-        display: none; /* Ocultar por defecto */
-    }
-    
-
-
-
 header {
     position:relative;
     width: 100%;
-    
     display: flex;
-    max-width: 1400px;
+    max-width: 1200px;
     background-color:transparent;
     
      /* Asegúrate de que el menú esté por encima de la imagen */
@@ -109,11 +92,7 @@ nav  {
     
     padding: 10px 0;
     z-index: 10; /* Asegura que el nav esté por encima de la imagen */
-    
-    
-
-     /* Fondo semitransparente para el menú */
-    
+        
     
 }
 
@@ -162,7 +141,7 @@ a:hover {
 .row {
     display: flex;
     flex-wrap: wrap;
-    background-color: #e8e9f0; 
+    background-color: #162dda; 
     margin: 0px;
     padding-right:  40px;
 }
@@ -173,16 +152,7 @@ img {
     border: transparent; /* Borde de la imagen (opcional) */
     /* Borde de la imagen (opcional) */
 }
-.mapa{
-    background-position: center;
-    text-align: center;
-    background-color: black;
-    color: white;
-    font-size: 20px;
-    stroke: #000;
-    
- 
-}
+
 /* Create two unequal columns that sits next to each other */
 /* Sidebar/left column */
 .side {
@@ -190,20 +160,9 @@ img {
     background-color: #f6f1f1;
     padding: 10px;
 }
-.mapa{
-    padding: 50px;
-    
-}
+
 /* Main column */
-.main {
-    
-    display: flex 70%;
-    background-color: rgba(242, 237, 231, 0.839);
-    padding: 20px;
-    font-family:'lato';
-    font-size: 20px;
-    color: rgba(13, 13, 12, 0.635);
-}
+
 .slider {
     position:relative;
     width: 90%;
@@ -234,9 +193,9 @@ img {
 }
 .container{
     font-family: 'font_lato';
-    border: 1px solid #090909;
+    border: 1px solid #f9c2c2;
     border-radius: 14px;
-    color: #000;
+    color:  #70160E;
     padding: 50px;
 
 
@@ -288,9 +247,9 @@ animation-fill-mode: both;
     
 
 .fakeimg {
-    background-color: #ededec90;
+    background-color: #f2f2ed90;
     width: 30%;
-    padding: 2%;
+    padding: 20px;
     
 }
 
@@ -301,6 +260,7 @@ animation-fill-mode: both;
     background:black;
     color:#AB793E;
 }
+
 .red-social{
 color: #f5f1f1;
 background-color:rgb(13, 12, 12) ;

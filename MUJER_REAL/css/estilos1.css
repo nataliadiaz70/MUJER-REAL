@@ -1,77 +1,100 @@
 @import url('https://fonts.googleapis.com/css/estilos.css');
+@import url('https://fonts.googleapis.com/css?family=font_lato');
+
 
 *{
     /* La propiedad border-box recalcula el ancho de una caja para que el width sea la estrictamente la suma de border + padding + ancho o altura que sea necesario para que se cumpla. 
     BORDER-BOX NO INCLUYE LOS MÁRGENES! */
     box-sizing: border-box;
-    padding: 10px;
+    margin: 0px;
+    padding: 0px;
 }
+@font-face {
+    font-family: 'lato_light';
+    src: url('https://fonts.googleapis.com/css/estilos.css/font_lato.ttf') format('truetype'); /* Ruta a tu archivo de fuente */
+}
+/* Style t
+*{
+    /* La propiedad border-box recalcula el ancho de una caja para que el width sea la estrictamente la suma de border + padding + ancho o altura que sea necesario para que se cumpla. 
+    BORDER-BOX NO INCLUYE LOS MÁRGENES! */
 
 /* Style the body */
 body{
 color:#AB793E;
 font-family: "lato";
 text-align: center;
-}
-
-/* Footer */
-.footer {
-    padding: 80px 20px 10px ;
-    text-align: center;
-    background:black;
-    color:white ;
-}
-.red-social{
-color: #f5f1f1;
-background-color:rgb(13, 12, 12) ;
-position: relative;
+padding: 20px;
+background-color:#E1E3DB;
+display: flex;
+justify-content: center; /* Centrado horizontal */
+align-items: center;     /* Centrado vertical */
+min-height: 100vh;       /* Asegura que el body ocupe al menos el 100% de la altura de la ventana */
 text-align: center;
-padding-bottom: 50px;
+
 }
 
-.red-social a:hover {
+h1{
 
-    color: #AB793E;
+    color:#70160E;
+}
+h2{
+    color:#AB793E;
+}
+.main-container {
+    max-width: 1400px;
+    width: 100%;
+    padding: 0px;
+}
 
+.main {
     
-
+    display: flex 70%;
+    background-color: #E1E3DB;
+    padding: 100px;
+    font-family:'lato';
+    font-size: 20px;
+    color: rgba(234, 234, 207, 0.635);
 }
-
-
-
-.red-social a {
-    display: inline-block;
-    text-decoration: none;
-    width: 45px;
-    height: 45px;
-    line-height: 45px;
-    color: #fff;
-    margin-right: 10px;
-    background-color: rgb(15, 14, 14);
-    text-align: center;
-    transition: all 300ms ease;
+.row  {
+    flex: 10%;
+    background-color: #f2ededde;
+    padding: 20px;
 }
-
-.grupo2 small{
-    position: relative;
-    color:#d7ab79;
-
-}
-
 
 
 header {
-    position:absolute;
+    position:relative;
     width: 100%;
-    
     display: flex;
-    max-width: 1400px;
+    max-width: 1200px;
     background-color:transparent;
+    
      /* Asegúrate de que el menú esté por encima de la imagen */
 }
+img {
+    max-width: 100%; /* La imagen no excederá el ancho del contenedor */
+    height: auto; /* Altura ajustada automáticamente */
+    object-fit: cover;
+    border: transparent; /* Borde de la imagen (opcional) */
+    /* Borde de la imagen (opcional) */
+}
+.hero-image {
+    background-image: url(""); /* Cambia 'ruta_de_tu_imagen.jpg' por la ruta de tu imagen */
+    position: relative;
+    width: 100%;
+    height:auto; /* 100% de la altura de la ventana */
+    overflow: hidden;
+        
+    } 
+    .fakeimg {
+        background-color: #ededec90;
+        width: 30%;
+        padding: 2px;
+        color: #AB793E;
+    }
 
 nav  {
-    position: relative; /* Posición absoluta para superponer el nav */
+    position: absolute; /* Posición absoluta para superponer el nav */
     top: 0;
     left: 0;
     width: 100%;; /* Fondo semi-transparente */
@@ -85,12 +108,11 @@ nav  {
     
     
 }
-
 nav ul {
     list-style-type: none;
     margin: 0;
-    padding-top: 20px;
-    
+    padding: 50px;
+    display: flex;
     
 }
 
@@ -99,14 +121,17 @@ nav ul li {
     display:inline-block;
     font-family:'lato';
     font-size: 30px;
-    margin-right: 0px;
+    margin:10px;
+    padding-top: 20px;
+    
     
     
 }
 
 nav ul li a {
-    color: white;
+    color:#ede3d6;
     text-decoration: none;
+    
     
 }
 a:hover {
@@ -115,38 +140,14 @@ a:hover {
 }
 
 
-
-
 /* Change color on hover */
 .navbar a:hover {
     background-color: #e8b684;
     color: black;
 }
- /* Column container */
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: #e8e9f0; 
-    margin: 0px;
-    padding-right:  40px;
-}
 
-.side {
-    flex: 10%;
-    background-color: #f4f1f1;
-    padding: 10px;
-}
+ /* Column container 
 
-
-
-
-
-.descripcion{
-border-radius: 5px;
-color: #000;
-padding: 10px;
-position: relative;
-}
 
 
 
@@ -154,9 +155,10 @@ position: relative;
 .footer {
     padding: 80px 20px 10px ;
     text-align: center;
-    background:black;
+    background:rgb(5, 4, 4);
     color:#AB793E;
 }
+
 .red-social{
 color: #f5f1f1;
 background-color:rgb(13, 12, 12) ;
@@ -188,11 +190,20 @@ padding-bottom: 50px;
     transition: all 300ms ease;
 }
 
-.grupo2 small{
+.grupo-2 small{
     position: relative;
     color:#AB793E;
 
 }
 
+.container{
+        font-family: 'font_lato';
+        border: 1px solid #f9c2c2;
+        border-radius: 14px;
+        color:#70160E;
+        padding: 10px;
+        margin: 20px;
 
-
+    }
+    
+    

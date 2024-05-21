@@ -1,10 +1,181 @@
-.form button{
+@import url('https://fonts.googleapis.com/css?family=font_lato');
 
-    background-color: blue;
-    width: 500px;
-    height: 400px;
+*{
+    /* La propiedad border-box recalcula el ancho de una caja para que el width sea la estrictamente la suma de border + padding + ancho o altura que sea necesario para que se cumpla. 
+    BORDER-BOX NO INCLUYE LOS MÁRGENES! */
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+@font-face {
+    font-family: 'lato_light';
+    src: url('https://fonts.googleapis.com/css/estilos.css/font_lato.ttf') format('truetype'); /* Ruta a tu archivo de fuente */
+}
+
+
+body {
+    font-family: 'Lato';
+    margin: 0;
+    padding: 10px;
+    background-color:#0a0a0a;
+    display: flex;
+    justify-content: center; /* Centrado horizontal */
+    align-items: left;     /* Centrado vertical */
+    min-height: 100vh;       /* Asegura que el body ocupe al menos el 100% de la altura de la ventana */
+    text-align: center;
+    color: #f1ede8;
+}
+/* Contenedor principal */
+.main-container {
+    max-width: 1400px;
+    width: 100%;
+    padding: 0px;
+}
+
+.hero-image {
+    background-image: url(""); /* Cambia 'ruta_de_tu_imagen.jpg' por la ruta de tu imagen */
+    
+    
+        position: relative;
+        width: 100%;
+        height: auto; /* 100% de la altura de la ventana */
+        overflow: hidden;
+        
+    }
+
+
+
+h2{
+    color:#AB793E;
+}
+
+header {
+        position:relative;
+        width: 100%;
+        display: flex;
+        max-width: 1200px;
+        background-color:transparent;
+        
+         /* Asegúrate de que el menú esté por encima de la imagen */
+    
+}
+img {
+    max-width: 100%; /* La imagen no excederá el ancho del contenedor */
+    height: auto; /* Altura ajustada automáticamente */
+    object-fit: cover;
+    border: transparent; /* Borde de la imagen (opcional) */
+    /* Borde de la imagen (opcional) */
+}
+
+
+nav  {
+    position: absolute; /* Posición absoluta para superponer el nav */
+    top: 0;
+    left: 0;
+    width: 100%; /* Fondo semi-transparente */
+    padding: 10px 0;
+    z-index: 10; /* Asegura que el nav esté por encima de la imagen */
+    
+        
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 50px;
+    display: flex;
+    
+}
+
+nav ul li {
+    display: flex;
+    display:inline-block;
+    font-family:'lato';
+    font-size: 30px;
+    margin:10px;
+    padding-top: 20px;
+    
+    
+    
+}
+
+nav ul li a {
+    color:#ede3d6;
+    text-decoration: none;
+    
+}
+a:hover {
+    
+    color: rgb(11, 11, 11);
 }
 
 
 
+/* Change color on hover */
+.navbar a:hover {
+    background-color: #e28f3c;
+    color: black;
+}
+ 
+.mapa{
+    background-position: center;
+    text-align: center;
+    background-color: rgb(243, 239, 239);
+    color: rgb(4, 3, 3);
+    font-size: 20px;
+    stroke: #000;
+    
+}
+
+
+/* Footer */
+.footer {
+    padding: 80px 20px 10px ;
+    text-align: center;
+    background:black;
+    color:white ;
+}
+ 
+.grupo-2 small{
+        position: relative;
+        color:#AB793E;
+    
+}
+
+.red-social{
+    color: #f5f1f1;
+    background-color:rgb(13, 12, 12) ;
+    position: relative;
+    text-align: center;
+    padding-bottom: 50px;
+    }
+    
+.red-social a:hover {
+    
+        color: #AB793E;
+    
+        
+    
+    }
+
+.red-social a {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: rgb(15, 14, 14);
+    text-align: center;
+    transition: all 300ms ease;
+}
+
+
+
+p {
+font-family: "lato";
+text-align: center;
+font-size: 20px;
+}
 
